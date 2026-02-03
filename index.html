@@ -148,7 +148,7 @@ let otherPressCount = 0;
 growBtn.addEventListener('click', () => {
     confetti();
     // Play local confetti pop sound
-    const audio = new Audio('confetti-pop-sound.mp3');
+    const audio = new Audio('1.mp3');
     audio.play();
 
     container.innerHTML = `
@@ -160,6 +160,7 @@ growBtn.addEventListener('click', () => {
         </div>
         <div class="pookie-caption">yipiee pookie</div>
     `;
+
 
     const s = document.createElement("script");
     s.src = "https://tenor.com/embed.js";
@@ -179,7 +180,7 @@ otherBtn.addEventListener('click', () => {
 
     if (otherPressCount === 3) {
         // Play local jestes-chuj-nie-kolega.mp3 sound
-        const audio = new Audio('jestes-chuj-nie-kolega.mp3');
+        const audio = new Audio('2.mp3');
         audio.play();
         otherBtn.style.visibility = 'hidden';
         setTimeout(() => {
